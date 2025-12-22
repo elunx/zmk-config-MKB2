@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - BKSP
+  - NON US BACKSLASH
   - {t: TAB, h: LCTRL}
   - A
   - S
@@ -23,8 +23,8 @@ layers:
   - J
   - K
   - L
-  - SEMI
-  - SQT
+  - MINUS
+  - SLASH
   - LSHFT
   - Z
   - X
@@ -35,8 +35,8 @@ layers:
   - M
   - COMMA
   - DOT
-  - UP
-  - FSLH
+  - SEMICOLON
+  - DOUBLE QUOTES
   - {t: ESC, h: LCTRL}
   - LGUI
   - LALT
@@ -44,9 +44,9 @@ layers:
   - {t: SPACE, h: Fnc}
   - {t: ENTER, h: Fnc}
   - {t: SPACE, h: Num}
-  - LEFT
-  - DOWN
-  - RIGHT
+  - RIGHT ALT
+  - LEFT BRACKET
+  - EQUAL
   - LEFT
   - UP
   - SPACE
@@ -138,9 +138,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MINUS
-  - EQUAL
-  - LBKT
-  - RBKT
+  - '4'
+  - '5'
+  - '6'
   - BSLH
   - {t: ▽, type: trans}
   - {t: SPACE, h: LSHFT}
@@ -149,10 +149,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - FSLH
-  - SEMI
-  - SQT
+  - '0'
+  - '1'
+  - '2'
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

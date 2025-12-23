@@ -21,18 +21,50 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        mouse1 {
+            bindings = <&mkp MB1>;
+            key-positions = <19 20>;
+            layers = <0 2>;
+        };
+
+        mouse2 {
+            bindings = <&mkp MB2>;
+            key-positions = <20 21>;
+            layers = <0 2>;
+        };
+
+        mouse3 {
+            bindings = <&mkp MB3>;
+            key-positions = <19 21>;
+            layers = <0 2>;
+        };
+
+        lang1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <31 32>;
+        };
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <27 28>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "Def";
             bindings = <
-&kp ESC        &kp Q     &kp W      &kp E     &kp R        &kp T            &kp Y        &kp U        &kp I      &kp O          &kp P             &kp NON_US_BACKSLASH
-&mt LCTRL TAB  &kp A     &kp S      &kp D     &kp F        &kp G            &kp H        &kp J        &kp K      &kp L          &kp MINUS         &kp SLASH
-&kp LSHFT      &kp Z     &kp X      &kp C     &kp V        &kp B            &kp N        &kp M        &kp COMMA  &kp DOT        &kp SEMICOLON     &kp DOUBLE_QUOTES
-&mt LCTRL ESC  &kp LGUI  &kp LALT             &lt 2 SPACE  &lt 1 SPACE      &lt 3 ENTER  &lt 2 SPACE             &kp RIGHT_ALT  &kp LEFT_BRACKET  &kp EQUAL
-&kp LEFT       &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                  &kp HOME     &kp PG_UP  &kp ENTER      &kp PG_DN         &kp END
-                                    &kp A                                                             &kp B
+&kp ESC        &kp Q     &kp W      &kp E     &kp R         &kp T            &kp Y        &kp U            &kp I      &kp O          &kp P             &kp NON_US_BACKSLASH
+&mt LCTRL TAB  &kp A     &kp S      &kp D     &kp F         &kp G            &kp H        &kp J            &kp K      &kp L          &kp MINUS         &kp SLASH
+&kp LSHFT      &kp Z     &kp X      &kp C     &kp V         &kp B            &kp N        &kp M            &kp COMMA  &kp DOT        &kp SEMICOLON     &kp DOUBLE_QUOTES
+&mt LCTRL ESC  &kp LGUI  &kp LALT             &lt 2 DELETE  &lt 1 SPACE      &lt 3 ENTER  &lt 2 BACKSPACE             &kp RIGHT_ALT  &kp LEFT_BRACKET  &kp EQUAL
+&kp LEFT       &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                   &kp HOME         &kp PG_UP  &kp ENTER      &kp PG_DN         &kp END
+                                    &kp A                                                                  &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

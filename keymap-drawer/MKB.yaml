@@ -40,10 +40,10 @@ layers:
   - {t: ESC, h: LCTRL}
   - LGUI
   - LALT
-  - {t: SPACE, h: Fnc}
+  - {t: DELETE, h: Fnc}
   - {t: SPACE, h: Num}
   - {t: ENTER, h: Mouse}
-  - {t: SPACE, h: Fnc}
+  - {t: BACKSPACE, h: Fnc}
   - RIGHT ALT
   - LEFT BRACKET
   - EQUAL
@@ -354,3 +354,17 @@ layers:
   - END
   - A
   - B
+combos:
+- p: [19, 20]
+  k: '&mkp MB1'
+  l: [Def, Fnc]
+- p: [20, 21]
+  k: '&mkp MB2'
+  l: [Def, Fnc]
+- p: [19, 21]
+  k: '&mkp MB3'
+  l: [Def, Fnc]
+- p: [31, 32]
+  k: LANGUAGE 1
+- p: [27, 28]
+  k: LANGUAGE 2

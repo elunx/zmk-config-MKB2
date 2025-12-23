@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - NON US BACKSLASH
+  - INT3
   - {t: TAB, h: LCTRL}
   - A
   - S
@@ -36,11 +36,11 @@ layers:
   - COMMA
   - DOT
   - SEMICOLON
-  - DOUBLE QUOTES
+  - SINGLE QUOTE
   - {t: ESC, h: LCTRL}
   - LGUI
   - LALT
-  - {t: DELETE, h: Fnc}
+  - {t: DEL, h: Fnc}
   - {t: SPACE, h: Num}
   - {t: ENTER, h: Mouse}
   - {t: BACKSPACE, h: Fnc}
@@ -71,7 +71,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - NON US BACKSLASH
+  - INT3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -93,7 +93,7 @@ layers:
   - '0'
   - '1'
   - '2'
-  - '3'
+  - KP 3
   - PLUS
   - ASTERISK
   - {t: ▽, type: trans}

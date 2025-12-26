@@ -314,12 +314,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -475,17 +475,29 @@ layers:
 combos:
 - p: [19, 20]
   k: '&mkp MB1'
-  l: [Def, Fnc]
+  l: [Def, Num, Bra]
 - p: [20, 21]
   k: '&mkp MB2'
-  l: [Def, Fnc]
+  l: [Def]
 - p: [19, 21]
   k: '&mkp MB3'
-  l: [Def, Fnc]
+  l: [Def]
 - p: [7, 8]
   k: LANGUAGE 1
 - p: [3, 4]
   k: LANGUAGE 2
 - p: [21, 22]
   k: Sft+INT1
-  l: [Def, Num]
+  l: [Def, Num, Bra]
+- p: [27, 28]
+  k: Sft+1
+  l: [Def, Num, Bra]
+- p: [31, 32]
+  k: Sft+SLASH
+  l: [Def, Num, Bra]
+- p: [18, 23]
+  k: BT
+  l: [Def]
+- p: [8, 9]
+  k: '&macro_bra_s'
+  l: [Def, Num, Bra]

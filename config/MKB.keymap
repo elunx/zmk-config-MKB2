@@ -44,36 +44,16 @@
 
         lang1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <31 32>;
+            key-positions = <7 8>;
         };
 
         lang2 {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <27 28>;
-        };
-
-        lang1-2 {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <7 8>;
-        };
-
-        lang1-3 {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <18 19>;
-        };
-
-        lang2-2 {
-            bindings = <&kp LANGUAGE_2>;
             key-positions = <3 4>;
         };
 
-        lang2-3 {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <16 17>;
-        };
-
         underscore {
-            bindings = <&kp INT1>;
+            bindings = <&kp LS(INT1)>;
             key-positions = <21 22>;
         };
     };
@@ -84,11 +64,11 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp ESC        &kp Q     &kp W      &kp E     &kp R      &kp T            &kp Y        &kp U            &kp I      &kp O          &kp P             &kp INT3
-&mt LCTRL TAB  &kp A     &kp S      &kp D     &kp F      &kp G            &kp H        &kp J            &kp K      &kp L          &kp MINUS         &kp SLASH
-&kp LSHFT      &kp Z     &kp X      &kp C     &kp V      &kp B            &kp N        &kp M            &kp COMMA  &kp DOT        &kp SEMICOLON     &kp SINGLE_QUOTE
-&mt LCTRL ESC  &kp LGUI  &kp LALT             &lt 2 DEL  &lt 1 SPACE      &lt 3 ENTER  &lt 2 BACKSPACE             &kp RIGHT_ALT  &kp LEFT_BRACKET  &kp EQUAL
-&kp LEFT       &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                &kp HOME         &kp PG_UP  &kp ENTER      &kp PG_DN         &kp END
+&kp ESC        &kp Q     &kp W      &kp E     &kp R      &kp T            &kp Y        &kp U            &kp I      &kp O          &kp P          &kp INT3
+&mt LCTRL TAB  &kp A     &kp S      &kp D     &kp F      &kp G            &kp H        &kp J            &kp K      &kp L          &kp MINUS      &kp SLASH
+&kp LSHFT      &kp Z     &kp X      &kp C     &kp V      &kp B            &kp N        &kp M            &kp COMMA  &kp DOT        &kp SEMICOLON  &kp SINGLE_QUOTE
+&mt LCTRL ESC  &kp LGUI  &kp LALT             &lt 2 DEL  &lt 1 SPACE      &lt 3 ENTER  &lt 2 BACKSPACE             &kp RIGHT_ALT  &kp EQUAL      &kp LEFT_BRACKET
+&kp LEFT       &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                &kp HOME         &kp PG_UP  &kp ENTER      &kp PG_DN      &kp END
                                     &kp A                                                               &kp B
             >;
 
@@ -98,12 +78,12 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4     &kp N5         &kp DOUBLE_QUOTES  &kp N7     &kp N8     &kp N9     &kp N0     &kp INT3
-&trans           &trans         &trans     &trans    &trans     &trans         &kp PERIOD         &kp N4     &kp N5     &kp N6     &kp MINUS  &kp SLASH
-&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans     &trans         &kp N0             &kp N1     &kp N2     &kp N3     &kp PLUS   &kp ASTERISK
-&trans           &kp ENTER      &kp ENTER            &kp ENTER  &kp ENTER      &kp ENTER          &kp ENTER             &kp COMMA  &trans     &trans
-&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                    &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                                           &kp A                                                             &kp B
+&trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5       &kp DOUBLE_QUOTES  &kp N7    &kp N8     &kp N9     &kp LEFT_BRACKET  &kp INT3
+&trans    &kp F6  &kp F7     &kp F8    &kp F9     &kp F10      &kp PERIOD         &kp N4    &kp N5     &kp N6     &kp MINUS         &kp SLASH
+&trans    &trans  &trans     &trans    &kp F11    &kp F12      &kp N0             &kp N1    &kp N2     &kp N3     &kp PLUS          &kp ASTERISK
+&trans    &trans  &trans               &trans     &trans       &trans             &trans               &kp COMMA  &trans            &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                                  &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN         &kp END
+                             &kp A                                                          &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -154,7 +134,7 @@
         bt_layer {
             label = "BT";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_CLR_ALL  &trans    &trans     &trans     &trans     &trans
+&bt BT_CLR  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0      &bt BT_CLR_ALL  &trans    &trans     &trans     &trans     &trans
 &trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
 &trans      &trans        &trans        &trans        &trans        &trans            &trans          &trans    &trans     &trans     &trans     &trans
 &trans      &trans        &trans                      &trans        &trans            &trans          &trans               &trans     &trans     &trans

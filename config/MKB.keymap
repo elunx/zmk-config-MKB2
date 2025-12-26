@@ -87,14 +87,7 @@
         macro_bra_s: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp LS(N8) &kp LS(N9)>,
-                <&macro_release>,
-                <&kp LEFT>;
-
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT>;
             label = "NEW_MACRO";
         };
     };

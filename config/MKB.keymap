@@ -51,6 +51,31 @@
             bindings = <&kp LANGUAGE_2>;
             key-positions = <27 28>;
         };
+
+        lang1-2 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <7 8>;
+        };
+
+        lang1-3 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <18 19>;
+        };
+
+        lang2-2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <3 4>;
+        };
+
+        lang2-3 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <16 17>;
+        };
+
+        underscore {
+            bindings = <&kp INT1>;
+            key-positions = <21 22>;
+        };
     };
 
     keymap {
@@ -73,11 +98,11 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4     &kp N5         &kp DOUBLE_QUOTES  &kp N7     &kp N8        &kp N9           &kp N0     &kp INT3
-&trans           &trans         &trans     &trans    &trans     &trans         &kp PERIOD         &kp N4     &kp N5        &kp N6           &kp MINUS  &kp SLASH
-&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans     &trans         &kp N0             &kp N1     &kp NUMBER_2  &kp KP_NUMBER_3  &kp PLUS   &kp ASTERISK
-&trans           &kp ENTER      &kp ENTER            &kp ENTER  &kp ENTER      &kp ENTER          &kp ENTER                &kp COMMA        &trans     &trans
-&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                    &kp HOME   &kp PG_UP     &kp ENTER        &kp PG_DN  &kp END
+&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4     &kp N5         &kp DOUBLE_QUOTES  &kp N7     &kp N8     &kp N9     &kp N0     &kp INT3
+&trans           &trans         &trans     &trans    &trans     &trans         &kp PERIOD         &kp N4     &kp N5     &kp N6     &kp MINUS  &kp SLASH
+&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans     &trans         &kp N0             &kp N1     &kp N2     &kp N3     &kp PLUS   &kp ASTERISK
+&trans           &kp ENTER      &kp ENTER            &kp ENTER  &kp ENTER      &kp ENTER          &kp ENTER             &kp COMMA  &trans     &trans
+&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                                    &kp HOME   &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                            &kp A                                                             &kp B
             >;
 

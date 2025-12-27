@@ -60,7 +60,7 @@ layers:
   - A
   - B
   Num:
-  - {t: ▽, type: trans}
+  - ''
   - F1
   - F2
   - F3
@@ -355,18 +355,18 @@ layers:
   - A
   - B
   Cur:
-  - {t: ▽, type: trans}
+  - ''
   - Sft+1
   - Sft+2
   - Sft+3
   - Sft+4
   - Sft+5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - Sft+6
   - Sft+7
@@ -378,19 +378,19 @@ layers:
   - DOWN
   - RIGHT
   - END
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -398,9 +398,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - LEFT
   - UP
   - SPACE
@@ -414,7 +414,7 @@ layers:
   - A
   - B
   Bra:
-  - {t: ▽, type: trans}
+  - ''
   - Sft+1
   - Sft+2
   - Sft+3
@@ -500,4 +500,19 @@ combos:
   l: [Def]
 - p: [8, 9]
   k: '&macro_bra_s'
+  l: [Def, Num, Bra]
+- p: [20, 21]
+  k: '&macro_bro_m'
+  l: [Num, Bra]
+- p: [32, 33]
+  k: '&macro_bro_l'
+  l: [Def, Num, Bra]
+- p: [2, 3]
+  k: '&macro_dq'
+  l: [Def, Num, Bra]
+- p: [14, 15]
+  k: '&macro_sq'
+  l: [Def, Num, Bra]
+- p: [26, 27]
+  k: '&macro_bra_ket'
   l: [Def, Num, Bra]

@@ -76,9 +76,39 @@
             layers = <0>;
         };
 
-        macro_bro_s {
+        macro_bra_s {
             bindings = <&macro_bra_s>;
             key-positions = <8 9>;
+            layers = <0 1 7>;
+        };
+
+        macro_bra_m {
+            bindings = <&macro_bro_m>;
+            key-positions = <20 21>;
+            layers = <1 7>;
+        };
+
+        macro_bra_l {
+            bindings = <&macro_bro_l>;
+            key-positions = <32 33>;
+            layers = <0 1 7>;
+        };
+
+        macro_dq {
+            bindings = <&macro_dq>;
+            key-positions = <2 3>;
+            layers = <0 1 7>;
+        };
+
+        macro_sq {
+            bindings = <&macro_sq>;
+            key-positions = <14 15>;
+            layers = <0 1 7>;
+        };
+
+        macro_bra_ket {
+            bindings = <&macro_bra_ket>;
+            key-positions = <26 27>;
             layers = <0 1 7>;
         };
     };
@@ -89,6 +119,41 @@
             #binding-cells = <0>;
             bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT>;
             label = "NEW_MACRO";
+        };
+
+        macro_bro_m: macro_bro_m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(NON_US_HASH) &kp LEFT>;
+            label = "MACRO_BRO_M";
+        };
+
+        macro_bro_l: macro_bro_L {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET &kp NON_US_HASH &kp LEFT>;
+            label = "MACRO_BRO_L";
+        };
+
+        macro_dq: macro_dq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N2) &kp LS(N2) &kp LEFT>;
+            label = "MACRO_DQ";
+        };
+
+        macro_sq: macro_sq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N7) &kp LS(N7) &kp LEFT>;
+            label = "MACRO_SQ";
+        };
+
+        macro_bra_ket: macro_bra_ket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(COMMA) &kp LS(DOT) &kp LEFT>;
+            label = "MACRO_BRA_KET";
         };
     };
 
@@ -112,7 +177,7 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans    &kp F1  &kp F2     &kp F3    &kp F4     &kp F5       &kp DOUBLE_QUOTES  &kp N7    &kp N8     &kp N9     &kp LEFT_BRACKET  &kp INT3
+&none     &kp F1  &kp F2     &kp F3    &kp F4     &kp F5       &kp DOUBLE_QUOTES  &kp N7    &kp N8     &kp N9     &kp LEFT_BRACKET  &kp INT3
 &trans    &kp F6  &kp F7     &kp F8    &kp F9     &kp F10      &kp PERIOD         &kp N4    &kp N5     &kp N6     &kp MINUS         &kp SLASH
 &trans    &trans  &trans     &trans    &kp F11    &kp F12      &kp N0             &kp N1    &kp N2     &kp N3     &kp PLUS          &kp ASTERISK
 &trans    &trans  &trans               &trans     &trans       &trans             &trans               &kp COMMA  &trans            &trans
@@ -182,10 +247,10 @@
         cursol_layer {
             label = "Cur";
             bindings = <
-&trans    &kp LS(N1)        &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(NUMBER_5)      &trans    &trans    &kp UP     &trans     &trans     &trans
-&trans    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans                &kp HOME  &kp LEFT  &kp DOWN   &kp RIGHT  &kp END    &trans
-&trans    &trans            &trans      &trans      &trans      &trans                &trans    &trans    &trans     &trans     &trans     &trans
-&trans    &trans            &trans                  &trans      &trans                &trans    &trans               &trans     &trans     &trans
+&none     &kp LS(N1)        &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(NUMBER_5)      &none     &none     &kp UP     &none      &none      &none
+&trans    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans                &kp HOME  &kp LEFT  &kp DOWN   &kp RIGHT  &kp END    &none
+&trans    &trans            &trans      &trans      &trans      &trans                &none     &none     &none      &none      &none      &none
+&trans    &trans            &trans                  &trans      &trans                &trans    &trans               &none      &none      &none
 &kp LEFT  &kp UP            &kp SPACE   &kp DOWN    &kp RIGHT                                   &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
                                         &kp A                                                             &kp B
             >;
@@ -198,7 +263,7 @@
         bracket_layer {
             label = "Bra";
             bindings = <
-&trans    &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)      &trans  &trans    &kp LS(N8)             &kp LS(N9)           &trans     &trans
+&none     &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)      &trans  &trans    &kp LS(N8)             &kp LS(N9)           &trans     &trans
 &trans    &kp LS(N6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans          &trans  &trans    &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &trans     &trans
 &trans    &trans      &trans      &trans      &trans      &trans          &trans  &trans    &kp RIGHT_BRACKET      &kp NON_US_HASH      &trans     &trans
 &trans    &trans      &trans                  &trans      &trans          &trans  &trans                           &trans               &trans     &trans

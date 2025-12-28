@@ -111,6 +111,12 @@
             key-positions = <26 27>;
             layers = <0 1 7>;
         };
+
+        switch_ipad {
+            bindings = <&tog 8>;
+            key-positions = <12 17>;
+            layers = <0 8>;
+        };
     };
 
     macros {
@@ -163,11 +169,11 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp ESC        &kp Q     &kp W      &kp E     &kp R      &kp T            &kp Y        &kp U            &kp I      &kp O          &kp P          &kp INT3
-&mt LCTRL TAB  &kp A     &kp S      &kp D     &kp F      &kp G            &kp H        &kp J            &kp K      &kp L          &kp MINUS      &kp SLASH
-&kp LSHFT      &kp Z     &kp X      &kp C     &kp V      &kp B            &kp N        &kp M            &kp COMMA  &kp DOT        &kp SEMICOLON  &kp SINGLE_QUOTE
-&mt LCTRL ESC  &kp LGUI  &kp LALT             &lt 7 DEL  &lt 1 SPACE      &lt 2 ENTER  &lt 6 BACKSPACE             &kp RIGHT_ALT  &kp EQUAL      &kp LEFT_BRACKET
-&kp LEFT       &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                &kp HOME         &kp PG_UP  &kp ENTER      &kp PG_DN      &kp END
+&kp ESC        &kp Q     &kp W      &kp E     &kp R        &kp T          &kp Y            &kp U        &kp I      &kp O          &kp P          &kp INT3
+&mt LCTRL TAB  &kp A     &kp S      &kp D     &kp F        &kp G          &kp H            &kp J        &kp K      &kp L          &kp MINUS      &kp SLASH
+&kp LSHFT      &kp Z     &kp X      &kp C     &kp V        &kp B          &kp N            &kp M        &kp COMMA  &kp DOT        &kp SEMICOLON  &kp SINGLE_QUOTE
+&mt LCTRL ESC  &kp LGUI  &kp LALT             &lt 7 SPACE  &lt 1 DEL      &lt 2 BACKSPACE  &lt 6 ENTER             &kp RIGHT_ALT  &kp EQUAL      &kp LEFT_BRACKET
+&kp LEFT       &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                                    &kp HOME     &kp PG_UP  &kp ENTER      &kp PG_DN      &kp END
                                     &kp A                                                               &kp B
             >;
 
@@ -269,6 +275,54 @@
 &trans    &trans      &trans                  &trans      &trans          &trans  &trans                           &trans               &trans     &trans
 &kp LEFT  &kp UP      &kp SPACE   &kp DOWN    &kp RIGHT                           &kp HOME  &kp PG_UP              &kp ENTER            &kp PG_DN  &kp END
                                   &kp A                                                     &kp B
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        ipad_default_layer {
+            label = "ipDef";
+            bindings = <
+&kp ESC           &kp Q         &kp W      &kp E     &kp R        &kp T          &kp Y            &kp U        &kp I      &kp O          &kp P          &kp INT3
+&mt LEFT_GUI TAB  &kp A         &kp S      &kp D     &kp F        &kp G          &kp H            &kp J        &kp K      &kp L          &kp MINUS      &kp SLASH
+&kp LSHFT         &kp Z         &kp X      &kp C     &kp V        &kp B          &kp N            &kp M        &kp COMMA  &kp DOT        &kp SEMICOLON  &mt GLOBE SINGLE_QUOTE
+&mt LCTRL ESC     &kp LEFT_GUI  &kp LALT             &lt 7 SPACE  &lt 1 DEL      &lt 2 BACKSPACE  &lt 6 ENTER             &kp RIGHT_ALT  &kp EQUAL      &kp LEFT_BRACKET
+&kp LEFT          &kp UP        &kp SPACE  &kp DOWN  &kp RIGHT                                    &kp HOME     &kp PG_UP  &kp ENTER      &kp PG_DN      &kp END
+                                           &kp A                                                               &kp B
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        ipad_function_layer {
+            label = "ipFnc";
+            bindings = <
+&trans    &trans  &trans     &trans    &trans     &trans             &trans         &kp LG(A)  &trans             &trans          &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans             &kp LG(Z)      &kp LG(C)  &kp LG(V)          &kp LS(LG(N3))  &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans             &kp LG(LS(Z))  &kp LG(X)  &kp LS(LA(LG(V)))  &trans          &trans     &trans
+&trans    &trans  &trans               &kp LG(Z)  &kp LS(LG(Z))      &trans         &trans                        &trans          &trans     &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                                    &kp HOME   &kp PG_UP          &kp ENTER       &kp PG_DN  &kp END
+                             &kp A                                                             &kp B
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        ipad_cursol_layer {
+            label = "ipCur";
+            bindings = <
+&none     &kp LS(N1)        &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(NUMBER_5)      &none     &none     &kp UP     &none      &none      &none
+&trans    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &trans                &kp HOME  &kp LEFT  &kp DOWN   &kp RIGHT  &kp END    &none
+&trans    &trans            &trans      &trans      &trans      &trans                &none     &none     &none      &none      &none      &trans
+&trans    &trans            &trans                  &trans      &trans                &trans    &trans               &none      &none      &none
+&kp LEFT  &kp UP            &kp SPACE   &kp DOWN    &kp RIGHT                                   &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                                        &kp A                                                             &kp B
             >;
 
             sensor-bindings =

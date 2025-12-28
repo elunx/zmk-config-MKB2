@@ -40,10 +40,10 @@ layers:
   - {t: ESC, h: LCTRL}
   - LGUI
   - LALT
-  - {t: DEL, h: Bra}
-  - {t: SPACE, h: Num}
-  - {t: ENTER, h: Fnc}
-  - {t: BACKSPACE, h: Cur}
+  - {t: SPACE, h: Bra}
+  - {t: DEL, h: Num}
+  - {t: BACKSPACE, h: Fnc}
+  - {t: ENTER, h: Cur}
   - RIGHT ALT
   - EQUAL
   - LEFT BRACKET
@@ -472,6 +472,183 @@ layers:
   - END
   - A
   - B
+  ipDef:
+  - ESC
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - INT3
+  - {t: TAB, h: LEFT GUI}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - MINUS
+  - SLASH
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - COMMA
+  - DOT
+  - SEMICOLON
+  - {t: SINGLE QUOTE, h: GLOBE}
+  - {t: ESC, h: LCTRL}
+  - LEFT GUI
+  - LALT
+  - {t: SPACE, h: Bra}
+  - {t: DEL, h: Num}
+  - {t: BACKSPACE, h: Fnc}
+  - {t: ENTER, h: Cur}
+  - RIGHT ALT
+  - EQUAL
+  - LEFT BRACKET
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  ipFnc:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Z
+  - Gui+C
+  - Gui+V
+  - Sft+Gui+3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Sft+Z
+  - Gui+X
+  - Sft+Alt+Gui+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+Z
+  - Sft+Gui+Z
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  ipCur:
+  - ''
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - ''
+  - ''
+  - UP
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - Sft+6
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - {t: ▽, type: trans}
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - END
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
 combos:
 - p: [19, 20]
   k: '&mkp MB1'
@@ -516,3 +693,6 @@ combos:
 - p: [26, 27]
   k: '&macro_bra_ket'
   l: [Def, Num, Bra]
+- p: [12, 17]
+  k: {t: ipDef, h: toggle}
+  l: [Def, ipDef]

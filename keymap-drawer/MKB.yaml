@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - MINUS
-  - SLASH
+  - {t: SLASH, h: LCTRL}
   - LSHFT
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - COMMA
   - DOT
   - SEMICOLON
-  - SINGLE QUOTE
+  - {t: SINGLE QUOTE, h: LSHIFT}
   - {t: ESC, h: LCTRL}
   - LGUI
   - LALT
@@ -52,11 +52,11 @@ layers:
   - SPACE
   - DOWN
   - RIGHT
-  - HOME
-  - PG UP
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_UP'
   - ENTER
-  - PG DN
-  - END
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
   - A
   - B
   Fnc:
@@ -99,8 +99,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Z
-  - Ctl+Y
+  - LANG2
+  - LANG1
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -142,19 +142,19 @@ layers:
   - DOWN
   - RIGHT
   - END
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
+  - Alt+LEFT
   - ''
+  - Alt+RIGHT
   - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -201,7 +201,7 @@ layers:
   - K
   - L
   - MINUS
-  - SLASH
+  - {t: SLASH, h: LCTRL}
   - LSHFT
   - Z
   - X
@@ -319,17 +319,17 @@ layers:
   - DOWN
   - RIGHT
   - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+LEFT
   - ''
-  - ''
-  - ''
-  - ''
+  - Alt+RIGHT
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

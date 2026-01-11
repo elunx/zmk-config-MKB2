@@ -36,7 +36,7 @@ layers:
   - COMMA
   - DOT
   - SEMICOLON
-  - {t: SINGLE QUOTE, h: Fnc}
+  - {t: SINGLE QUOTE, h: Bra}
   - {t: LANG2, h: LCTRL}
   - LGUI
   - LALT
@@ -47,11 +47,11 @@ layers:
   - RIGHT ALT
   - EQUAL
   - LEFT BRACKET
-  - Ctl+PAGE DOWN
+  - Ctl+PAGE UP
   - VOL UP
   - SPACE
   - VOL DN
-  - Ctl+PAGE UP
+  - Ctl+PAGE DOWN
   - '&msc SCRL_LEFT'
   - '&msc SCRL_UP'
   - ENTER
@@ -67,7 +67,7 @@ layers:
   - F4
   - F5
   - {t: ▽, type: trans}
-  - Ctl+A
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,10 +78,10 @@ layers:
   - F8
   - F9
   - F10
-  - Ctl+Z
-  - Ctl+C
-  - Ctl+V
-  - Sft+Gui+S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -90,17 +90,17 @@ layers:
   - {t: ▽, type: trans}
   - F11
   - F12
-  - Ctl+Y
-  - Ctl+X
-  - Ctl+Sft+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -361,7 +361,7 @@ layers:
   - Ctl+A
   - {t: ▽, type: trans}
   - Ctl+Y
-  - DOUBLE QUOTES
+  - SINGLE QUOTE
   - '7'
   - '8'
   - '9'
@@ -389,8 +389,8 @@ layers:
   - '1'
   - '2'
   - '3'
-  - PLUS
-  - ASTERISK
+  - Sft+SEMICOLON
+  - Sft+SINGLE QUOTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -449,13 +449,13 @@ layers:
   - RIGHT BRACKET
   - NON US HASH
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -551,9 +551,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
+  - {t: '&mkp MB1', type: held}
   - '&mkp MB3'
-  - '&mkp MB2'
+  - {t: '&mkp MB2', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -650,17 +650,9 @@ layers:
   - A
   - B
 combos:
-- p: [19, 20]
-  k: '&mkp MB1'
-  l: [Def, Num, Bra, ipDef]
-- p: [20, 21]
-  k: '&mkp MB2'
-  l: [Def, ipDef]
 - p: [19, 21]
-  k: '&mkp MB3'
+  k: Scr
   l: [Def, ipDef]
-- p: [7, 8]
-  k: LANGUAGE 1
 - p: [15, 16]
   k: LANGUAGE 2
 - p: [21, 22]
@@ -696,3 +688,5 @@ combos:
 - p: [12, 17]
   k: {t: ipDef, h: toggle}
   l: [Def, ipDef]
+- p: [14, 16]
+  k: Scr

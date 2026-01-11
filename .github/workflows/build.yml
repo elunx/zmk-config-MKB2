@@ -5,6 +5,8 @@ on:
     paths:
       - config/**
       - boards/**
+      - snippet/**
+      - .github/workflows/**
       - build.yaml
  
 jobs:

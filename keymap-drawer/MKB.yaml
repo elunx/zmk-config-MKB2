@@ -652,7 +652,6 @@ layers:
 combos:
 - p: [19, 21]
   k: Scr
-  l: [Def, ipDef]
 - p: [15, 16]
   k: LANGUAGE 2
 - p: [21, 22]
@@ -688,7 +687,5 @@ combos:
 - p: [12, 17]
   k: {t: ipDef, h: toggle}
   l: [Def, ipDef]
-- p: [14, 16]
-  k: Scr
 - p: [10, 11]
   k: DEL

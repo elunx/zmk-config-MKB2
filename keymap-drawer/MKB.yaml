@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - MINUS
-  - {t: SLASH, h: LCTRL}
+  - {t: SLASH, h: Bra}
   - {t: DELETE, h: LSHFT}
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - COMMA
   - DOT
   - SEMICOLON
-  - {t: SINGLE QUOTE, h: Bra}
+  - {t: SINGLE QUOTE, h: LSHIFT}
   - {t: LANG2, h: LCTRL}
   - LGUI
   - LALT
@@ -437,7 +437,7 @@ layers:
   - Sft+RIGHT BRACKET
   - Sft+NON US HASH
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -449,7 +449,7 @@ layers:
   - RIGHT BRACKET
   - NON US HASH
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -690,3 +690,5 @@ combos:
   l: [Def, ipDef]
 - p: [14, 16]
   k: Scr
+- p: [10, 11]
+  k: DEL

@@ -8,14 +8,16 @@
 };
 
 &left_encoder {
-    a-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    steps = <3>;
+    // a-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    // b-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    steps = <1>;
     status = "okay";
 };
 
 &sensors {
-    triggers-per-rotation = <1>;
+    triggers-per-rotation = <12>;
 };
 
 / {
@@ -29,7 +31,7 @@
             mv-deadzone = <88>;
             scale-multiplier = <1>;
             scale-divisor = <800>;
-            invert;
+            // invert;
             evt-type = <INPUT_EV_REL>;
             input-code = <INPUT_REL_X>;
         };
@@ -51,13 +53,13 @@
         compatible = "zmk,input-listener";
         device = <&anin0>;
         
-        layer0 {
-            layers = <0>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
-        };
         layer1 {
             layers = <1>;
             input-processors = <&zip_xy_scaler 1 16>;
+        };
+        layer0 {
+            layers = <0>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
         };
     };
 };

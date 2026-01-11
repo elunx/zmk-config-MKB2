@@ -54,15 +54,14 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&stick_split>;
-        input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;
         
-        layer1 {
-            layers = <1>;
-            input-processors = <&zip_xy_scaler 1 16>;
-        };
         layer0 {
             layers = <0>;
             input-processors = <&zip_xy_to_scroll_mapper>;
+        };
+        layer1 {
+            layers = <1>;
+            input-processors = <&zip_xy_scaler 1 16>;
         };
     };
     

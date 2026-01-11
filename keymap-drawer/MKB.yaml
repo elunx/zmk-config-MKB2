@@ -25,7 +25,7 @@ layers:
   - L
   - MINUS
   - {t: SLASH, h: LCTRL}
-  - {t: LANG2, h: LSHFT}
+  - {t: DELETE, h: LSHFT}
   - Z
   - X
   - C
@@ -36,8 +36,8 @@ layers:
   - COMMA
   - DOT
   - SEMICOLON
-  - {t: SINGLE QUOTE, h: LSHIFT}
-  - {t: DELETE, h: LCTRL}
+  - {t: SINGLE QUOTE, h: Fnc}
+  - {t: LANG2, h: LCTRL}
   - LGUI
   - LALT
   - {t: SPACE, h: Num}
@@ -47,11 +47,11 @@ layers:
   - RIGHT ALT
   - EQUAL
   - LEFT BRACKET
-  - LEFT
-  - UP
+  - Ctl+PAGE DOWN
+  - VOL UP
   - SPACE
-  - DOWN
-  - RIGHT
+  - VOL DN
+  - Ctl+PAGE UP
   - '&msc SCRL_LEFT'
   - '&msc SCRL_UP'
   - ENTER
@@ -95,12 +95,12 @@ layers:
   - Ctl+Sft+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -359,8 +359,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+A
-  - Ctl+B
   - {t: ▽, type: trans}
+  - Ctl+Y
   - DOUBLE QUOTES
   - '7'
   - '8'
@@ -384,7 +384,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+X
   - Sft+Ctl+V
-  - Ctl+Y
+  - Ctl+B
   - '0'
   - '1'
   - '2'
@@ -631,8 +631,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -661,7 +661,7 @@ combos:
   l: [Def, ipDef]
 - p: [7, 8]
   k: LANGUAGE 1
-- p: [3, 4]
+- p: [15, 16]
   k: LANGUAGE 2
 - p: [21, 22]
   k: Sft+INT1

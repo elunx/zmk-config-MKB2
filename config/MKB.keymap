@@ -27,7 +27,6 @@
         scroll_layer {
             bindings = <&mo 9>;
             key-positions = <19 21>;
-            layers = <0 3>;
         };
 
         lang2 {
@@ -99,11 +98,6 @@
             bindings = <&tog 3>;
             key-positions = <12 17>;
             layers = <0 3>;
-        };
-
-        fast_scrol_joy {
-            bindings = <&mo 9>;
-            key-positions = <14 16>;
         };
 
         delete {

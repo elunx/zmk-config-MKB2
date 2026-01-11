@@ -5,15 +5,15 @@
         device = <&trackball_split>;
         // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 1>, <&zip_temp_layer 8 300000>;
         
-        smaller_dpi {
-            layers = <6>;
+        snipe {
+            layers = <7>;
             input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>,
                 <&zip_xy_scaler 1 5>;
         };
 
         scroll {
-            layers = <1>;
+            layers = <9>;
             input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
         };
 
@@ -33,7 +33,7 @@
             layers = <0>;
             input-processors = 
                 <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>,
-                <&zip_xy_scaler 1 1>,
+                <&zip_xy_scaler 3 4>,
                 <&zip_temp_layer 8 300000>; 
         };
     };

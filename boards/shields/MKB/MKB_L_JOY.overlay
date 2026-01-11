@@ -53,13 +53,13 @@
         compatible = "zmk,input-listener";
         device = <&anin0>;
         
-        layer1 {
-            layers = <1>;
-            input-processors = <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
+        fast_scroll {
+            layers = <9>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
         };
         layer0 {
             layers = <0>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
         };
     };
 };

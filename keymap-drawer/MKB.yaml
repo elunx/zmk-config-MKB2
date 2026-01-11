@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - MINUS
-  - {t: SLASH, h: Bra}
+  - {t: SLASH, h: Mouse_slow}
   - {t: DELETE, h: LSHFT}
   - Z
   - X
@@ -36,7 +36,7 @@ layers:
   - COMMA
   - DOT
   - SEMICOLON
-  - {t: SINGLE QUOTE, h: LSHIFT}
+  - {t: SINGLE QUOTE, h: Mouse_fast}
   - {t: LANG2, h: LCTRL}
   - LGUI
   - LALT
@@ -437,7 +437,7 @@ layers:
   - Sft+RIGHT BRACKET
   - Sft+NON US HASH
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -450,6 +450,124 @@ layers:
   - NON US HASH
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  Mouse_slow:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - UP
+  - SPACE
+  - DOWN
+  - RIGHT
+  - HOME
+  - PG UP
+  - ENTER
+  - PG DN
+  - END
+  - A
+  - B
+  Mouse_fast:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -671,7 +789,7 @@ combos:
   l: [Def, Num, Bra, ipDef]
 - p: [20, 21]
   k: '&macro_bro_m'
-  l: [Num, Bra]
+  l: [Num, Bra, Def, ipDef]
 - p: [32, 33]
   k: '&macro_bro_l'
   l: [Def, Num, Bra, ipDef]
@@ -689,3 +807,5 @@ combos:
   l: [Def, ipDef]
 - p: [10, 11]
   k: DEL
+- p: [19, 20]
+  k: LANG1

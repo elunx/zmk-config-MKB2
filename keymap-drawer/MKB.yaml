@@ -670,8 +670,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '&mkp MB1', type: held}
-  - '&mkp MB3'
-  - {t: '&mkp MB2', type: held}
+  - {t: '&mkp MB3', type: held}
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -768,7 +768,7 @@ layers:
   - A
   - B
 combos:
-- p: [19, 21]
+- p: [19, 20]
   k: Scr
 - p: [15, 16]
   k: LANGUAGE 2

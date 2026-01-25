@@ -112,6 +112,8 @@
         20 // k
         21 // l
         24 // LShift
+        31 // m
+        33 // .
     >;
-    require-prior-idle-ms = <1000>;
+    require-prior-idle-ms = <700>;
 };

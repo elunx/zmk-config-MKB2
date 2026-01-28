@@ -109,7 +109,6 @@
     excluded-positions = <
         12 // LCtrl
         19 // j
-        20 // k
         21 // l
         24 // LShift
     >;

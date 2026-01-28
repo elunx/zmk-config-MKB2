@@ -104,6 +104,11 @@
             bindings = <&kp DEL>;
             key-positions = <10 11>;
         };
+
+        mouse3 {
+            bindings = <&mkp MB3>;
+            key-positions = <19 21>;
+        };
     };
 
     macros {
@@ -156,12 +161,12 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp ESCAPE        &kp Q         &kp W      &kp E         &kp R              &kp T            &kp Y        &kp U            &kp I         &kp O          &kp P           &kp INT3
-&mt LCTRL TAB     &kp A         &kp S      &kp D         &kp F              &kp G            &kp H        &kp J            &kp K         &kp L          &kp MINUS       &lt 8 SLASH
-&mt LSHFT DELETE  &kp Z         &kp X      &kp C         &kp V              &kp B            &kp N        &kp M            &kp COMMA     &kp DOT        &kp SEMICOLON   &lt 9 SINGLE_QUOTE
-&mt LCTRL LANG2   &kp LGUI      &kp LALT                 &lt 6 SPACE        &lt 1 LANG1      &lt 7 ENTER  &lt 2 BACKSPACE                &kp RIGHT_ALT  &kp EQUAL       &kp LEFT_BRACKET
-&kp LC(PAGE_UP)   &kp C_VOL_UP  &kp SPACE  &kp C_VOL_DN  &kp LC(PAGE_DOWN)                                &msc SCRL_LEFT   &msc SCRL_UP  &kp ENTER      &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                           &kp A                                                                           &kp B
+&kp ESCAPE        &kp Q         &kp W      &kp E         &kp R              &kp T             &kp Y        &kp U            &kp I         &kp O          &kp P           &kp INT3
+&mt LCTRL TAB     &kp A         &kp S      &kp D         &kp F              &kp G             &kp H        &kp J            &kp K         &kp L          &kp MINUS       &lt 8 SLASH
+&mt LSHFT DELETE  &kp Z         &kp X      &kp C         &kp V              &kp B             &kp N        &kp M            &kp COMMA     &kp DOT        &kp SEMICOLON   &lt 9 SINGLE_QUOTE
+&mt LCTRL LANG2   &kp LGUI      &kp LALT                 &lt 6 SPACE        &lt 1 DELETE      &lt 7 ENTER  &lt 2 BACKSPACE                &kp RIGHT_ALT  &kp EQUAL       &kp LEFT_BRACKET
+&kp LC(PAGE_UP)   &kp C_VOL_UP  &kp SPACE  &kp C_VOL_DN  &kp LC(PAGE_DOWN)                                 &msc SCRL_LEFT   &msc SCRL_UP  &kp ENTER      &msc SCRL_DOWN  &msc SCRL_RIGHT
+                                           &kp A                                                                            &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -278,12 +283,12 @@
         mouse_slow_layer {
             label = "Mouse_slow";
             bindings = <
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &mkp MB3   &mkp MB2   &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
-&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
-                             &kp A                                              &kp B
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans             &trans     &trans     &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1           &trans     &mkp MB2   &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans             &trans     &trans     &trans     &trans
+&trans    &trans  &trans               &trans     &trans      &trans  &kp LC(BACKSPACE)             &trans     &trans     &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME           &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
+                             &kp A                                                       &kp B
             >;
 
             sensor-bindings =
@@ -295,7 +300,7 @@
             label = "Mouse_fast";
             bindings = <
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &mkp MB3   &mkp MB2   &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &trans     &mkp MB2   &trans     &trans
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
 &trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
@@ -311,7 +316,7 @@
             label = "Mouse";
             bindings = <
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &mkp MB3   &mkp MB2   &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &trans     &mkp MB2   &trans     &trans
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
 &trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END
@@ -325,7 +330,7 @@
             label = "Scr";
             bindings = <
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
-&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &mkp MB3   &mkp MB2   &trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans      &trans  &mkp MB1  &trans     &mkp MB2   &trans     &trans
 &trans    &trans  &trans     &trans    &trans     &trans      &trans  &trans    &trans     &trans     &trans     &trans
 &trans    &trans  &trans               &trans     &trans      &trans  &trans               &trans     &trans     &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                      &kp HOME  &kp PG_UP  &kp ENTER  &kp PG_DN  &kp END

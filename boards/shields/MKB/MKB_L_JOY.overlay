@@ -54,11 +54,11 @@
         device = <&anin0>;
         
         slow_scroll {
-            layers = <8>;
-            input-processors = <&zip_xy_scaler 1 15>, <&zip_xy_to_scroll_mapper>;
+            layers = <7>;
+            input-processors = <&zip_xy_scaler 1 20>, <&zip_xy_to_scroll_mapper>;
         };
         fast_scroll {
-            layers = <9>;
+            layers = <2>;
             input-processors = <&zip_xy_to_scroll_mapper>;
         };
         layer0 {

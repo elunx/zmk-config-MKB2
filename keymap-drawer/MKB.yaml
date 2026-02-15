@@ -40,7 +40,7 @@ layers:
   - {t: LANG2, h: LCTRL}
   - LGUI
   - LALT
-  - {t: SPACE, h: Fnc}
+  - {t: SPACE, h: Sht}
   - {t: DELETE, h: Num}
   - {t: ENTER, h: Bra}
   - {t: BACKSPACE, h: Cur}
@@ -59,13 +59,13 @@ layers:
   - '&msc SCRL_RIGHT'
   - A
   - B
-  Fnc:
-  - ''
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  Sht:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+A
+  - {t: ▽, type: trans}
+  - Ctl+Y
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -73,11 +73,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: ▽, type: trans}
+  - Gui+Sft+S
+  - Ctl+C
+  - Ctl+V
+  - Ctl+Z
   - {t: ▽, type: trans}
   - '&mkp MB1'
   - {t: ▽, type: trans}
@@ -87,9 +87,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F11
-  - F12
+  - Ctl+X
+  - Ctl+Sft+V
+  - Ctl+B
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -355,12 +355,12 @@ layers:
   - A
   - B
   Num:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+A
-  - {t: ▽, type: trans}
-  - Ctl+Y
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - SINGLE QUOTE
   - '7'
   - '8'
@@ -368,11 +368,11 @@ layers:
   - LEFT BRACKET
   - INT3
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Sft+Gui+S
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Z
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - PERIOD
   - '4'
   - '5'
@@ -382,9 +382,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+X
-  - Sft+Ctl+V
-  - Ctl+B
+  - {t: ▽, type: trans}
+  - F11
+  - F12
   - '0'
   - '1'
   - '2'

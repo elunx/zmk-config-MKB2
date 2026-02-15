@@ -9,7 +9,7 @@
             layers = <1>; // layer8は今未使用
             input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT|INPUT_TRANSFORM_Y_INVERT)>,
-                <&zip_xy_scaler 1 5>;
+                <&zip_xy_scaler 1 7>;
         };
 
         mouse_fast {
@@ -21,7 +21,7 @@
 
         scroll {
             layers = <11>;
-            input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>, <&zip_xy_scaler 1 32>, <&zip_xy_to_scroll_mapper>;
         };
 
         // cursolレイヤーではTB無効化

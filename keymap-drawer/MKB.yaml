@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - MINUS
-  - {t: SLASH, h: Mouse_slow}
+  - {t: SLASH, h: LCTRL}
   - {t: DELETE, h: LSHFT}
   - Z
   - X
@@ -36,12 +36,12 @@ layers:
   - COMMA
   - DOT
   - SEMICOLON
-  - {t: SINGLE QUOTE, h: Mouse_fast}
+  - {t: SINGLE QUOTE, h: LSHIFT}
   - {t: LANG2, h: LCTRL}
   - LGUI
   - LALT
-  - {t: SPACE, h: Num}
-  - {t: DELETE, h: Fnc}
+  - {t: SPACE, h: Fnc}
+  - {t: DELETE, h: Num}
   - {t: ENTER, h: Bra}
   - {t: BACKSPACE, h: Cur}
   - RIGHT ALT
@@ -79,9 +79,9 @@ layers:
   - F9
   - F10
   - {t: ▽, type: trans}
+  - '&mkp MB1'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MB2'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,8 +99,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -394,8 +394,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - COMMA
@@ -496,7 +496,7 @@ layers:
   - {t: ▽, type: trans}
   - '&mkp MB2'
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -567,7 +567,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
